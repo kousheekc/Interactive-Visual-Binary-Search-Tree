@@ -1,9 +1,6 @@
 # Interactive-Visual-Binary-Search-Tree
 Interactive and visual Binary Search Tree implemented using Python and Tkinter
 
-# Interactive-Visual-Binary-Search-Tree
-Interactive and visual Binary Search Tree implemented using Python and Tkinter
-
 In this project, I create a user interface for an interactive visual representation of a binary search tree.
 
 ## Requirements:
@@ -25,18 +22,14 @@ A variation of the BST is the **AVL tree** which can be considered as a self-bal
 * **A visual representation** of the tree that updates in realtime.
 * And finally no UI is complete without an inbuilt **dark color scheme** :smiley:
 
+***random BST***
 <img src="media/unbalanced.png" width=640>
 
-***random BST***
-
+***balanced BST***
 <img src="media/balanced.png" width=640>
 
-***balanced BST***
-
+***steps while balancing***
 <img src="media/balance_show_steps.gif">
 
-***steps while balancing***
-
-<img src="media/dark_color_scheme.png" width=640>
-
 ***dark mode***
+<img src="media/dark_color_scheme.png" width=640>
