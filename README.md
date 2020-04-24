@@ -22,18 +22,18 @@ A variation of the BST is the **AVL tree** which can be considered as a self-bal
 * **A visual representation** of the tree that updates in realtime.
 * And finally no UI is complete without an inbuilt **dark color scheme** :smiley:
 
-***random BST***
+### Random BST
 
 <img src="media/unbalanced.png" width=640>
 
-***balanced BST***
+### Balanced BST
 
 <img src="media/balanced.png" width=640>
 
-***steps while balancing***
+### Steps while balancing
 
 <img src="media/balance_show_steps.gif">
 
-***dark mode***
+### Dark mode
 
 <img src="media/dark_color_scheme.png" width=640>
