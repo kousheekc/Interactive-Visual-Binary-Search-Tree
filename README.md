@@ -3,6 +3,8 @@ Interactive and visual Binary Search Tree implemented using Python and Tkinter
 
 In this project, I create a user interface for an interactive visual representation of a binary search tree.
 
+To run the program, simply run the visual_BST_using_BST_class.py script.
+
 ## Requirements:
 * The program was created using **Python3.7**
 * The UI was created using **Tkinter** (preinstalled with Python)
