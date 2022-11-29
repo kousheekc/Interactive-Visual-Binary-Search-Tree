@@ -25,7 +25,7 @@ git clone https://github.com/kousheekc/Interactive-Visual-Binary-Search-Tree
 ```
 
 ## Usage
-To run the app open a terminal and navigate to the folder you just cloned and run the following command:
+To run the app, open a terminal and navigate to the folder you just cloned and run the following command:
 ```
 python3 -m app
 ```
