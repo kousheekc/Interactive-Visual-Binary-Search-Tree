@@ -1,10 +1,9 @@
 from tkinter import *
 import random
 import time
-from bst import BST
 
-class VisualBST:
-    def __init__(self):
+class Interface:
+    def __init__(self, BST):
         self.outline_color = '#1e1e1e'
         self.mainscreen_color = '#e6e6e6'
         self.menubar_color = '#34495e'
@@ -61,9 +60,7 @@ class VisualBST:
 
         self.n = 0
 
-        self.bst = BST()
-
-        self.user_input_and_visualize()
+        self.bst = BST
 
     def setcolor_scheme(self):
         if self.color_scheme.get() == 1:
@@ -131,33 +128,31 @@ class VisualBST:
         self.canvas.delete("all")
         self.balance(self.bst.root)
 
-    def user_input_and_visualize(self):
-        loopActive = True
-        while loopActive:
-            self.canvas.update()
+    def update(self):
+        self.canvas.update()
 
-            if self.n == 0:
-                self.inorder(self.bst.root, 30, 600, 300)
+        if self.n == 0:
+            self.inorder(self.bst.root, 30, 600, 300)
+            
+        elif int(self.n) == -1:
+            self.canvas.quit()
+            loop_active = False
+
+        else:
+            if self.adding:
+                self.bst.root = self.bst.insert(self.bst.root, int(self.n))
+                self.adding = False
+
+            elif self.deleting:
+                self.canvas.delete("all")
+                self.bst.root = self.bst.delete_entry(self.bst.root, int(self.n))
+                self.deleting = False
+
+            if self.avl.get() == 1:
+                self.balance(self.bst.root)
                 
-            elif int(self.n) == -1:
-                self.canvas.quit()
-                loopActive = False
-
-            else:
-                if self.adding:
-                    self.bst.root = self.bst.insert(self.bst.root, int(self.n))
-                    self.adding = False
-
-                elif self.deleting:
-                    self.canvas.delete("all")
-                    self.bst.root = self.bst.delete_entry(self.bst.root, int(self.n))
-                    self.deleting = False
-
-                if self.avl.get() == 1:
-                    self.balance(self.bst.root)
-                    
-                self.n = 0
-                self.inorder(self.bst.root, 30, 600, 300)
+            self.n = 0
+            self.inorder(self.bst.root, 30, 600, 300)
 
     def inorder(self, sub_root, row, col, sep): 
         if sub_root: 
@@ -198,7 +193,3 @@ class VisualBST:
             
             elif (numOfLeftNodes < numOfRightNodes):
                 self.bst.left_rotate(sub_root)
-
-
-if __name__ == '__main__':
-    VisualBST()
