@@ -20,13 +20,18 @@ A variation of the BST is the **AVL tree** which can be considered as a self-bal
 
 ### Installation
 To install the Interactive Visual Binary Search Tree app, clone this repository using the following command:
-
+```
+git clone https://github.com/lukasvst/dm-vio.git
+```
 
 ## Usage
-To run the app open a terminal and run the following command:
+To run the app open a terminal and navigate to the folder you just clones and run the following command:
+```
+python3 -m app
+```
+Once the app is running the interface is self-explanatory. The features of the app are listed below.
 
-
-## Features:
+### Features:
 * **Add and delete** individual nodes from the BST
 * **Generate a random BST** of a specific size
 * **Balance** the BST (with the *show steps* option selected the recursive steps of the balancing process are shown)
