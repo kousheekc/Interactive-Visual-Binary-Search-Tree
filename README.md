@@ -21,7 +21,7 @@ A variation of the BST is the **AVL tree** which can be considered as a self-bal
 ### Installation
 To install the Interactive Visual Binary Search Tree app, clone this repository using the following command:
 ```
-git clone https://github.com/kousheekc/Interactive-Visual-Binary-Search-Tree
+git clone https://github.com/kousheekc/Interactive-Visual-Binary-Search-Tree.git
 ```
 
 ## Usage
